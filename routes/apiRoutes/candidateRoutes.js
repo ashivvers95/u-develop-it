@@ -4,6 +4,7 @@ const db = require('../../db/connection');
 const inputCheck = require('../../utils/inputCheck');
 
 
+//all candidates
 router.get('/candidates', (req, res) => {
     const sql = `SELECT candidates.*, parties.name
                  AS party_name
